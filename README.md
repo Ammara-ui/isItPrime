@@ -1,54 +1,12 @@
-# isItPrime
+# React + Vite
 
-isItPrime is a fun and simple web app that lets users check whether a number is prime. Built with React and deployed on Cloudflare Pages, this project offers a fast and interactive way to verify prime numbers.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Features
-- 🧮 **Prime Checker**: Instantly determine if a number is prime.
-- 🎨 **User-Friendly UI**: Clean and minimalistic design.
-- ⚡ **Fast Performance**: Built using Vite for a snappy experience.
-- 🌍 **Free Hosting**: Deployed on Cloudflare Pages.
+Currently, two official plugins are available:
 
-## 🛠️ Tech Stack
-- **Frontend**: React (via Vite)
-- **Styling**: CSS
-- **Deployment**: Cloudflare Pages
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🔧 Installation & Setup
+## Expanding the ESLint configuration
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/isItPrime.git
-cd isItPrime
-```
-
-### 2. Install Dependencies
-```bash
-npm install
-```
-
-### 3. Run Locally
-```bash
-npm run dev
-```
-👉 Open **http://localhost:5173/** in your browser.
-
-## 🚀 Deployment
-1. **Push to GitHub**
-```bash
-git add .
-git commit -m "Deploying isItPrime"
-git push origin main
-```
-2. **Deploy on Cloudflare Pages**:
-   - Connect GitHub repo in Cloudflare Pages
-   - Set Build Command: `npm run build`
-   - Set Output Directory: `dist`
-   - Deploy 🎉
-
-## 📄 License
-This project is open-source under the **MIT License**.
-
-## 📬 Contact
-If you have any suggestions or issues, feel free to open an issue or reach out!
-
-Enjoy checking prime numbers with **isItPrime**! 🎉
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
