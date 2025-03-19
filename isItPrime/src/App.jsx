@@ -1,18 +1,9 @@
 import { useState } from "react";
 import "./App.css";
-import confetti from "canvas-confetti";
 
 // 🆕 Add the Powerpuff Girls Winning GIF URL
 const powerpuffGif = "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG52bnBpaThocWY1cHd0YXJ4bm1tOXdleXptOGdpOXFlbngxZGc0ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TQbMZC7UngVH2/giphy.gif";
 const powerpuffGif1 = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3dlN3BhbHc0MGNyMHk1ZmNpdjB6enpnc2J0ZTR6M3BkeWZhNG1zMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TfXYJOZ5RrXFeebICt/giphy.gif"
-
-const triggerConfetti = () => {
-  confetti({
-    particleCount: 100,
-    spread: 70,
-    origin: { y: 0.6 }, // Adjust height of explosion
-  });
-};
 
 function isPrime(num) {
   if (num < 2) return false;
@@ -52,7 +43,6 @@ export default function App() {
       : `❌ ${formattedNum} is NOT a prime number.`);
 
     if (prime) {
-      triggerConfetti();
       setGif(powerpuffGif); // 🆕 Show Powerpuff Girls Winning GIF 🎉
     } else {
       document.getElementById("number-input").classList.add("shake");

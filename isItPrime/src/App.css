@@ -48,6 +48,7 @@ input {
   border: 2px solid #FFC107; /* Golden Yellow */
   border-radius: 10px;
   text-align: center;
+  color: black;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #FFF9C4;
 }
